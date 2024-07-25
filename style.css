@@ -1,0 +1,118 @@
+
+  :root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --border-color: #ccc;
+    --background-color: #f2f2f2;
+    --font-family: Arial, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    max-width: 800px;
+    margin: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+
+  .formrow{
+    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-ROW, .table-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+ 
+
+  .form-ROW label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-row input[type="text"], 
+  .form-row input[type="email"], 
+  .form-row input[type="tel"], 
+  .form-row select, 
+  .form-row input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button-container button {
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-container button:hover {
+    background-color: var(--secondary-color);
+  }
+
+  .table-block {
+    margin-top: 20px;
+  }
+
+  .table-block table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table-block th, .table-block td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--border-color);
+  }
+
+  .table-block th {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+    }
+  }
